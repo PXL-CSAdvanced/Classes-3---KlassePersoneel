@@ -7,11 +7,10 @@ creëren en de gegevens van dat personeelsobject te tonen.
 
 ![Afbeelding met tekst, schermopname, software, scherm Automatisch
 gegenereerde
-beschrijving](./media/image1.png){width="3.9117694663167106in"
-height="2.6382688101487313in"}
+beschrijving](./media/image1.png)
 
 Je maakt voor deze toepassing eerst de (basis)klasse **Personeel** met
-volgende [eigenschappen]{.underline}:
+volgende [eigenschappen]:
 
 -   **Naam** - string.
 
@@ -26,7 +25,7 @@ volgende [eigenschappen]{.underline}:
     personeelslid in dienst getreden is.
 
 Deze klasse bevat ook nog enkele ["read-only"
-eigenschappen]{.underline}:
+eigenschappen]:
 
 -   **Aantdienstjaren** -- integer die het aantal dienstjaren weergeeft:
     huidig jaar wordt verminderd met het startjaar.
@@ -42,7 +41,7 @@ eigenschappen]{.underline}:
     verhoogd. Voor wie een beoordelingscijfer van 9 of 10 heeft, wordt
     het basisbedrag verdubbeld.
 
-De klasse Personeel bevat volgende [methods]{.underline}:
+De klasse Personeel bevat volgende [methods]:
 
 -   Constructor **Personeel** in 2 vormen: één zonder parameters waarbij
     een "leeg" personeelslid gecreëerd wordt en één met 5 parameters (de
@@ -66,8 +65,7 @@ de "invulwaarden".
 
 ![Afbeelding met tekst, schermopname, Lettertype, lijn Automatisch
 gegenereerde
-beschrijving](./media/image2.png){width="2.1979166666666665in"
-height="1.3854166666666667in"}
+beschrijving](./media/image2.png)
 
 Na die keuze verschijnt het venster Personeelsklasse.
 
@@ -75,15 +73,13 @@ Bij keuze van een "leeg" personeelsobject:
 
 ![Afbeelding met tekst, schermopname, scherm, software Automatisch
 gegenereerde
-beschrijving](./media/image3.png){width="5.468879046369204in"
-height="3.847504374453193in"}
+beschrijving](./media/image3.png)
 
 Mogelijke inhoud bij keuze van een ingevuld personeelsobject:
 
 ![Afbeelding met tekst, schermopname, scherm, software Automatisch
 gegenereerde
-beschrijving](./media/image4.png){width="5.645592738407699in"
-height="3.971826334208224in"}
+beschrijving](./media/image4.png)
 
 Het venster *Personeelsklasse* bevat volgende objecten (+ enkele
 labels):
