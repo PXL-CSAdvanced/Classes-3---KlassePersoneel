@@ -27,10 +27,10 @@ volgende [eigenschappen]:
 Deze klasse bevat ook nog enkele ["read-only"
 eigenschappen]:
 
--   **Aantdienstjaren** -- integer die het aantal dienstjaren weergeeft:
+-   **Dienstjaren** -- integer die het aantal dienstjaren weergeeft:
     huidig jaar wordt verminderd met het startjaar.
 
--   **Geslachttekst** -- string met als waarde "Mannelijk" of
+-   **GeslachtTekst** -- string met als waarde "Mannelijk" of
     "Vrouwelijk" (afhankelijk van de waarde van de eigenschap Geslacht)
 
 -   **Premie** -- decimal. De premie wordt als volgt bepaald: eerst
@@ -87,30 +87,30 @@ labels):
 -   TxtVoornaam: toont de voornaam van het personeelsobject. Bij het
     verlaten van dit tektstvak wordt een eventuele wijziging in het
     personeelsobject uitgevoerd en ook al getoond in het tekstvak
-    txtResultaat.
+    TxtResultaat.
 
 -   TxtNaam: toont de naam van het personeelsobject. Bij het verlaten
     van dit tektstvak wordt een eventuele wijziging in het
     personeelsobject uitgevoerd en ook al getoond in het tekstvak
-    txtResultaat.
+    TxtResultaat.
 
 -   TxtStartjaar: toont het startjaar (jaar van indiensttreding) van het
     personeelsobject. Bij het verlaten van dit tektstvak wordt een
     eventuele wijziging in het personeelsobject uitgevoerd en ook al
-    getoond in het tekstvak txtResultaat.
+    getoond in het tekstvak TxtResultaat.
 
 -   CboGeslacht: toont in de listbox het geslacht (M of V) van het
     personeelsobject. Bij het verlaten van dit tektstvak wordt een
     eventuele wijziging in het personeelsobject uitgevoerd en ook al
-    getoond in het tekstvak txtResultaat.
+    getoond in het tekstvak TxtResultaat.
 
--   TxtResulaat (niet ingeschakeld). In dit tekstvak wordt de informatie
+-   TxtResulaat (niet wijzigbaar). In dit tekstvak wordt de informatie
     van het personeelsobject getoond door oproep van de methode
     InformatieVolledig (afdruk zoals in de schermvoorbeelden).
 
 -   BtnVerhoogBeoordeling: bij het drukken van deze knop wordt het
     beoordelingscijfer van het personeelsobject met één verhoogd en ook
-    al getoond in het tekstvak txtResultaat.
+    al getoond in het tekstvak TxtResultaat.
 
 -   BtnVerlaagBeoordeling: bij het drukken van deze knop wordt het
     beoordelingscijfer van het personeelsobject met één verlaagd en ook
