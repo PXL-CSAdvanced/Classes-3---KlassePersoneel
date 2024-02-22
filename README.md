@@ -53,7 +53,7 @@ De klasse Personeel bevat volgende [methods]:
 -   **VerlaagBeoordeling** -- deze methode zorgt ervoor dat het
     beoordelingscijfer met 1 verlaagd wordt.
 
--   **InformatieVolledig** -- deze functiemethode geeft een string als
+-   **ToonInfo** -- deze functiemethode geeft een string als
     resultaat met alle informatie van het personeelslid. (zie verder
     inhoud van het tekstvak txtResultaat).
 
