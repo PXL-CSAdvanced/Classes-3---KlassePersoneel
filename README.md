@@ -33,7 +33,7 @@ eigenschappen]:
 -   **GeslachtTekst** -- string met als waarde "Mannelijk" of
     "Vrouwelijk" (afhankelijk van de waarde van de eigenschap Geslacht)
 
--   **Premie** -- decimal. De premie wordt als volgt bepaald: eerst
+-   **Premie** -- float. De premie wordt als volgt bepaald: eerst
     wordt het basisbedrag berekend: 500€, vermeerderd met 20€ per
     dienstjaar. Dit bedrag wordt gehalveerd voor personeelsleden die een
     Beoordelingscijfer hebben dat lager is dan 5. Voor diegenen die een
