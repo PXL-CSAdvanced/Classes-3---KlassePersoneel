@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personeel.WPF", "Personeel.WPF\Personeel.WPF.csproj", "{18CA7484-A993-4AA9-8CF5-9D8713B6A726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personeel.Shared", "Personeel.Shared\Personeel.Shared.csproj", "{F3D18BFA-6D47-41FB-8DAC-C8DC26ABD957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18CA7484-A993-4AA9-8CF5-9D8713B6A726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CA7484-A993-4AA9-8CF5-9D8713B6A726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CA7484-A993-4AA9-8CF5-9D8713B6A726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CA7484-A993-4AA9-8CF5-9D8713B6A726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D18BFA-6D47-41FB-8DAC-C8DC26ABD957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D18BFA-6D47-41FB-8DAC-C8DC26ABD957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D18BFA-6D47-41FB-8DAC-C8DC26ABD957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D18BFA-6D47-41FB-8DAC-C8DC26ABD957}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8A7C4EF-A3C6-4645-97DD-80D3BCD06D8C}
+	EndGlobalSection
+EndGlobal
