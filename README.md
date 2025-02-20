@@ -1,39 +1,28 @@
 # KlassePersoneel
 
-Maak een toepassing **KlassePersoneel** om een personeelsobject te
-creëren en de gegevens van dat personeelsobject te tonen.
+Maak een toepassing **Personeel** om een werknemersobject te
+creëren en de gegevens van dat werknemersobject te tonen.
 
 ***Class diagram***
 
-![Afbeelding met tekst, schermopname, software, scherm Automatisch
-gegenereerde
-beschrijving](./media/image1.png)
+![klasse diagram](./media/employeediagram.png)
 
-Je maakt voor deze toepassing eerst de (basis)klasse **Personeel** met
+Je maakt voor deze toepassing eerst de (basis)klasse **Employee** met
 volgende [eigenschappen]:
 
--   **Naam** - string.
-
--   **Voornaam** -string.
-
--   **Geslacht** - string (waarde "M" of "V" ).
-
--   **Beoordelingscijfer** -- integer waarde van minimum 0 en maximum
-    10.
-
--   **Startjaar** -- integer die aangeeft in welk kalenderjaar het
+-   **LastName** - string.
+-   **FirstName** -string.
+-   **Sex** - char (waarde "M", "V" of "X").
+-   **Score** -- integer waarde van minimum 0 en maximum 10.
+-   **StartYear** -- integer die aangeeft in welk kalenderjaar het
     personeelslid in dienst getreden is.
 
-Deze klasse bevat ook nog enkele ["read-only"
-eigenschappen]:
+Deze klasse bevat ook nog enkele "read-only" eigenschappen:
 
--   **Dienstjaren** -- integer die het aantal dienstjaren weergeeft:
+-   **YearsOfService** -- integer die het aantal dienstjaren weergeeft:
     huidig jaar wordt verminderd met het startjaar.
-
--   **GeslachtTekst** -- string met als waarde "Mannelijk" of
-    "Vrouwelijk" (afhankelijk van de waarde van de eigenschap Geslacht)
-
--   **Premie** -- float. De premie wordt als volgt bepaald: eerst
+-   **SexDescription** -- string met als waarde "Male", "Female" of "Other" (afhankelijk van de waarde van de eigenschap Sex)
+-   **Bonus** -- decimal. De premie wordt als volgt bepaald: eerst
     wordt het basisbedrag berekend: 500€, vermeerderd met 20€ per
     dienstjaar. Dit bedrag wordt gehalveerd voor personeelsleden die een
     Beoordelingscijfer hebben dat lager is dan 5. Voor diegenen die een
@@ -41,77 +30,68 @@ eigenschappen]:
     verhoogd. Voor wie een beoordelingscijfer van 9 of 10 heeft, wordt
     het basisbedrag verdubbeld.
 
-De klasse Personeel bevat volgende [methods]:
+De klasse Employee bevat volgende methodes:
 
--   Constructor **Personeel** in 2 vormen: één zonder parameters waarbij
+-   Constructor **Employee** in 2 vormen: één zonder parameters waarbij
     een "leeg" personeelslid gecreëerd wordt en één met 5 parameters (de
     5 eerder beschreven eigenschappen, in de volgorde zoals beschreven).
-
--   **VerhoogBeoordeling** -- deze methode zorgt ervoor dat het
+-   **IncreaseScore** -- deze methode zorgt ervoor dat het
     beoordelingscijfer met 1 verhoogd wordt.
-
--   **VerlaagBeoordeling** -- deze methode zorgt ervoor dat het
+-   **DecreaseScore** -- deze methode zorgt ervoor dat het
     beoordelingscijfer met 1 verlaagd wordt.
-
--   **ToonInfo** -- deze functiemethode geeft een string als
+-   **ShowSummary** -- deze functiemethode geeft een string als
     resultaat met alle informatie van het personeelslid. (zie verder
-    inhoud van het tekstvak txtResultaat).
+    inhoud van het tekstvak resultTextBox).
 
 Bij de start van het programma, krijgt de gebruiker de vraag of een
-"leeg" personeelsobject of een "ingevuld" personeelsobject gecreëerd
+"leeg" werknemersobject of een "ingevuld" werknemersobject gecreëerd
 moet worden. In het eerste geval is er geen naam en voornaam (leeg), is
 het geslacht "M" en het startjaar 2000. In het 2^de^ geval kies je zelf
 de "invulwaarden".
 
-![Afbeelding met tekst, schermopname, Lettertype, lijn Automatisch
-gegenereerde
-beschrijving](./media/image2.png)
+![messagebox](./media/image2.png)
 
-Na die keuze verschijnt het venster Personeelsklasse.
+Na die keuze verschijnt het venster Personeel.
 
 Bij keuze van een "leeg" personeelsobject:
 
-![Afbeelding met tekst, schermopname, scherm, software Automatisch
-gegenereerde
-beschrijving](./media/image3.png)
+![venster met lege waarden](./media/image3.png)
 
 Mogelijke inhoud bij keuze van een ingevuld personeelsobject:
 
-![Afbeelding met tekst, schermopname, scherm, software Automatisch
-gegenereerde
-beschrijving](./media/image4.png)
+![venster met standaard waarden](./media/image4.png)
 
-Het venster *Personeelsklasse* bevat volgende objecten (+ enkele
+Het venster *Personeel* bevat volgende objecten (+ enkele
 labels):
 
--   TxtVoornaam: toont de voornaam van het personeelsobject. Bij het
+-   firstNameTextBox: toont de voornaam van het werknemersobject. Bij het
     verlaten van dit tektstvak wordt een eventuele wijziging in het
-    personeelsobject uitgevoerd en ook al getoond in het tekstvak
-    TxtResultaat.
+    werknemersobject uitgevoerd en ook al getoond in het tekstvak
+    resultTextBox.
 
--   TxtNaam: toont de naam van het personeelsobject. Bij het verlaten
+-   lastNameTextBox: toont de naam van het werknemersobject. Bij het verlaten
     van dit tektstvak wordt een eventuele wijziging in het
-    personeelsobject uitgevoerd en ook al getoond in het tekstvak
-    TxtResultaat.
+    werknemersobject uitgevoerd en ook al getoond in het tekstvak
+    resultTextBox.
 
--   TxtStartjaar: toont het startjaar (jaar van indiensttreding) van het
-    personeelsobject. Bij het verlaten van dit tektstvak wordt een
-    eventuele wijziging in het personeelsobject uitgevoerd en ook al
-    getoond in het tekstvak TxtResultaat.
+-   startYearTextBox: toont het startjaar (jaar van indiensttreding) van het
+    werknemersobject. Bij het verlaten van dit tektstvak wordt een
+    eventuele wijziging in het werknemersobject uitgevoerd en ook al
+    getoond in het tekstvak resultTextBox.
 
--   CboGeslacht: toont in de listbox het geslacht (M of V) van het
-    personeelsobject. Bij het verlaten van dit tektstvak wordt een
-    eventuele wijziging in het personeelsobject uitgevoerd en ook al
-    getoond in het tekstvak TxtResultaat.
+-   sexComboBox: toont in een combobox het geslacht (M, V of X) van het
+    werknemersobject. Bij het verlaten van dit tektstvak wordt een
+    eventuele wijziging in het werknemersobject uitgevoerd en ook al
+    getoond in het tekstvak resultTextBox.
 
--   TxtResulaat (niet wijzigbaar). In dit tekstvak wordt de informatie
-    van het personeelsobject getoond door oproep van de methode
-    InformatieVolledig (afdruk zoals in de schermvoorbeelden).
+-   resultTextBox (niet wijzigbaar). In dit tekstvak wordt de informatie
+    van het werknemersobject getoond door oproep van de methode
+    ShowSummary (afdruk zoals in de schermvoorbeelden).
 
--   BtnVerhoogBeoordeling: bij het drukken van deze knop wordt het
-    beoordelingscijfer van het personeelsobject met één verhoogd en ook
-    al getoond in het tekstvak TxtResultaat.
+-   increaseScoreButton: bij het drukken van deze knop wordt het
+    beoordelingscijfer van het werknemersobject met één verhoogd en ook
+    al getoond in het tekstvak resultTextBox.
 
--   BtnVerlaagBeoordeling: bij het drukken van deze knop wordt het
-    beoordelingscijfer van het personeelsobject met één verlaagd en ook
-    al getoond in het tekstvak TxtResultaat.
+-   decreaseScoreButton: bij het drukken van deze knop wordt het
+    beoordelingscijfer van het werknemersobject met één verlaagd en ook
+    al getoond in het tekstvak resultTextBox.
