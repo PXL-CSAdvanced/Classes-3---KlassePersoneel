@@ -49,17 +49,17 @@ moet worden. In het eerste geval is er geen naam en voornaam (leeg), is
 het geslacht "M" en het startjaar 2000. In het 2^de^ geval kies je zelf
 de "invulwaarden".
 
-![messagebox](./media/image2.png)
+![messagebox](./media/question.png)
 
 Na die keuze verschijnt het venster Personeel.
 
 Bij keuze van een "leeg" personeelsobject:
 
-![venster met lege waarden](./media/image3.png)
+![venster met lege waarden](./media/empty.png)
 
 Mogelijke inhoud bij keuze van een ingevuld personeelsobject:
 
-![venster met standaard waarden](./media/image4.png)
+![venster met standaard waarden](./media/defaultdata.png)
 
 Het venster *Personeel* bevat volgende objecten (+ enkele
 labels):
@@ -88,10 +88,10 @@ labels):
     van het werknemersobject getoond door oproep van de methode
     ShowSummary (afdruk zoals in de schermvoorbeelden).
 
--   increaseScoreButton: bij het drukken van deze knop wordt het
-    beoordelingscijfer van het werknemersobject met één verhoogd en ook
-    al getoond in het tekstvak resultTextBox.
+-   Menu met scoreMenuItem
+    - increaseMenuItem: verhoogt de score van het werknemersobject met 1
+    - decreaseMenuItem: verlaagd de score van eht werknemersobject met 1
 
--   decreaseScoreButton: bij het drukken van deze knop wordt het
-    beoordelingscijfer van het werknemersobject met één verlaagd en ook
-    al getoond in het tekstvak resultTextBox.
+ > Beide menu items tonen na het verhogen/verlagen van de score de nieuwe informatie van het werknemersobject in de resultTextBox
+
+![voorbeeld met menu items](./media/menu.png)
