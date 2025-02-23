@@ -5,7 +5,7 @@ creëren en de gegevens van dat werknemersobject te tonen.
 
 ***Class diagram***
 
-![klasse diagram](./media/employeediagram.png)
+![klasse diagram](./media/EmployeeDiagram.png)
 
 Je maakt voor deze toepassing eerst de (basis)klasse **Employee** met
 volgende [eigenschappen]:
